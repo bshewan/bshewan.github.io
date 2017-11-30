@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <section>
+      <nav>
+        <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+        <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+        </div>
+        <div id="links">
+          <a href="img/harddisk.jpg">Hard Drive</a>
+          <a href="img/apple.jpg">An Old Apple Computer</a>
+          <a href="img/cpu.jpg">An Old Athlon Cpu</a>
+        </div>
+      </nav>
+      <article>
+        <h2>Hi!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          ultricies ante non lacus vehicula pharetra. Cras velit urna, vulputate
+          sed commodo at, <a href="#">rutrum eget</a> erat. Suspendisse sapien eros, dignissim
+          vel aliquam eu, volutpat id dolor. Mauris id orci egestas, mattis orci
+          ut, consectetur mi. In vestibulum eget libero at pharetra. Suspendisse
+          dictum nunc sit amet nibh laoreet vehicula. </p>
+        <img src="img/portfolio.jpg" alt="leather portfolio" />
+        <p>Integer bibendum vel leo sit amet tincidunt. Fusce rutrum arcu a dui
+          molestie, eget cursus metus imperdiet. Duis non risus eget purus
+          venenatis sollicitudin. Quisque <a href="#">tempus congue nisl</a>, non laoreet sapien
+          suscipit a. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia Curae; Nulla facilisi.</p>
+        <p>Maecenas et ligula sollicitudin, elementum lorem non, gravida tellus.
+          Maecenas elementum quam sit amet malesuada ullamcorper. Aliquam
+          volutpat feugiat magna, vel semper enim posuere non. Donec mi dui,
+          aliquet eget egestas ut, efficitur at dolor. Mauris consectetur nec
+          velit at varius. Vestibulum sit amet dignissim lacus.</p>
+      </article>
+    </section>
+  <script src="js/blueimp-gallery.min.js"></script>
+  <script>
+    blueimp.Gallery(
+        document.getElementById('links').getElementsByTagName('a'),
+        {
+            container: '#blueimp-gallery-carousel',
+            carousel: true
+        }
+    );
+  </script>
+  </body>
+</html>
